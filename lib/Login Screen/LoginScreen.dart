@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:todo_app/Home%20Screen/BottomNav.dart';
 import 'package:todo_app/Home%20Screen/HomeScreen1.dart';
 import 'package:todo_app/Login%20Screen/SignupScreen.dart';
 import 'package:todo_app/Starting%20Screen/Screen4.dart';
@@ -144,7 +145,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (context) => const HomeScreen1(),
+                                builder: (context) => const BottomNavigation(),
                               ));
                         },
                         child: const Text(

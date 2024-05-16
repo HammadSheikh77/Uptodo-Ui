@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:todo_app/Starting%20Screen/SplashScreen.dart';
 
+
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
   runApp(const MyApp());
