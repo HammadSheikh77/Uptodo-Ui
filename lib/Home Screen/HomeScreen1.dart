@@ -1,4 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:curved_navigation_bar/curved_navigation_bar.dart';
+import 'package:todo_app/Home%20Screen/AddTaskScreen.dart';
+import 'package:todo_app/Home%20Screen/CalendarScreen.dart';
+import 'package:todo_app/Home%20Screen/FocusScreen.dart';
+import 'package:todo_app/Home%20Screen/ProfileScreen.dart';
 
 class HomeScreen1 extends StatefulWidget {
   const HomeScreen1({super.key});
@@ -36,6 +41,33 @@ class _HomeScreen1State extends State<HomeScreen1> {
             ),
           ],
         ),
+      ),
+      bottomNavigationBar: CurvedNavigationBar(
+        animationDuration: const Duration(milliseconds: 300),
+        backgroundColor: Colors.black,
+        color: const Color(0xff363636),
+        items: const [
+          Icon(
+            Icons.home_outlined,
+            color: Colors.white,
+          ),
+          Icon(
+            Icons.calendar_month_outlined,
+            color: Colors.white,
+          ),
+          Icon(
+            Icons.add_circle_outline,
+            color: Colors.white,
+          ),
+          Icon(
+            Icons.access_time_rounded,
+            color: Colors.white,
+          ),
+          Icon(
+            Icons.person_2_outlined,
+            color: Colors.white,
+          ),
+        ],
       ),
     );
   }
